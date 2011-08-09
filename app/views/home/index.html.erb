@@ -1,0 +1,6 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<%= ab_test("call_to_action", %w{button1.jpg button2.jpg}) do |button| %>
+<%= image_tag(button, :alt => "Call to action!") %>
+<% end %>
